@@ -5,7 +5,7 @@ import socket
 from base64 import b64decode, b64encode
 from pathlib import Path
 
-import pysodium
+from nacl import bindings as pysodium
 
 if platform.system() == "Windows":
     import win32file
